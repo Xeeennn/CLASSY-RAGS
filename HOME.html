@@ -38,14 +38,14 @@
             border-top: black;
             position: absolute;
             padding-bottom: 1%;
-
+            position: fixed;
         }
 
         .Bname
         {
             color: white;
-            top: 20%;
-            right: 70%;
+            top:16%;
+            right: 68%;
             position: absolute;
         }
 
@@ -59,16 +59,70 @@
         .navi a {
             text-decoration: none;
             color: rgb(255, 255, 255);
-            margin-right: 15px; 
+            margin-right: 1%; 
             top: 55%;
             
             
         }
 
         .navi a:hover{
-            border-style:outset;
+           
             border-color: white;
+            border: 1px outset;
             padding: 1%;
+        }
+
+        .menu-toggle {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+        }
+        
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: rgb(255, 255, 255);
+            margin: 4px 0;
+            transition: 0.4s;
+            margin-right: 25px;
+        }
+        
+        .menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #000000;
+            width: 150px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgb(253, 253, 253);
+            margin-right: 23px;
+            border-radius: 5px;
+        }
+        
+        .menu.active {
+            display: block;
+        }
+        
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+
+
+        .menu ul li {
+            margin-bottom: 20px;
+        
+        }
+        
+        .menu ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            
         }
 
         .logo {
@@ -81,14 +135,17 @@
 
         .logo img {
             width: 20%;
-            height: 20%;
-            margin-top: 14%;
+            margin-top: 11%;
         }
 
         .content {
             clear: both;
             margin-top: 4%;
         }
+        
+        /*#icon{
+            display: block;
+        }*/
 
         .Highlight {
             color: none;
@@ -103,7 +160,7 @@
 
         .Intro
         {
-            margin-top: 6%;
+            margin-top: 5%;
             color: #fff;
             font-family: initial;
             text-align:center;
@@ -139,6 +196,75 @@
             position: fixed;
         }
 
+        @media (max-width:1600px)
+        {
+            .logo img {
+            width: 20%;
+            margin-top: 10%;
+        }
+        .Bname
+        {
+            color: white;
+            top:4%;
+            right: 59%;
+            position: absolute;
+        }
+        .logo {
+            top: -5%;
+            background-repeat: no-repeat;
+            margin-left: 2%;
+            position:fixed;
+        }
+
+        .navi {
+            margin-left: 75%;
+            margin-top: 1.5%; 
+            
+
+        }
+
+        .navi a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin-right: 0%; 
+            top: 55%;
+            
+            
+        }
+
+        .navi a:hover{
+           
+            border-color: white;
+            border: 1px outset;
+            padding: 1%;
+        }
+
+        .Highlight {
+            color: none;
+            margin-top: 9%;
+            width: 80%;
+            margin-left: 10%;
+            border-style: solid;
+            border-color: #fff;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        .Intro
+        {
+            margin-top: 5%;
+            color: #fff;
+            font-family: initial;
+            text-align:center;
+            font-size: small;
+            /* Monospace */
+            /* Initial */
+        }
+       
+        }
+
+       
+
 
     </style>
 </head>
@@ -150,14 +276,23 @@
             <center><a><img src="https://i.imgur.com/yGGtdLm.png" alt="image" width="50%"height="15%"></a></center>
         </div>
         <div class="logo">
-            <a href="home.html"><img src="https://i.imgur.com/iqsg0U9.jpg" alt="image"></a>
+            <a href="HOME.html"><img src="https://i.imgur.com/iqsg0U9.jpg" alt="image"></a>
         </div>
-        <div class="navi">
-            <a href="https://raw.githack.com/Xeeennn/CLASSY-RAGS/master/HOME.html">HOME</a>
-            <a href="https://raw.githack.com/Xeeennn/CLASSY-RAGS/master/ABOUT.html">ABOUT</a>
-            <a href="menu.html">MENU</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              
+              <nav class="menu">
+                <ul>
+                  <li><a href="HOME.html">HOME</a></li>
+                  <li><a href="ABOUT.html">ABOUT</a></li>
+                  <li><a href="SHORTS.html">APPAREL</a></li>
+                  <li><a href="fcontact.html">CONTACT</a></li>
+                </ul>
+              </nav>
     </div>
 
     <div class="content">
@@ -178,4 +313,5 @@
 </div>
 
 </body>
+<script src="script.java"></script>
 </html>
