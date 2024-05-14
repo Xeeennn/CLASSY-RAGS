@@ -1,1 +1,941 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>CLASSY RAGS</title>
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <link
+            rel="icon"
+            href=
+            "https://i.imgur.com/pprt4d5.jpg"
+            type="image/x-icon"
+        />
+    <style>
+        
+        ::-webkit-scrollbar
+        {
+            display: none;
+        }
+        body {
+            background-image: url(https://i.imgur.com/Nyu6NJL.jpg);
+            padding: 0;
+            margin: 0%;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            overflow-x: hidden;
+            height: 1080px;
+            overflow-y: scroll;
+        }
+
+        .header {
+          overflow: hidden;
+            background-color: black;
+            margin-top: 0%;
+            width: 100%;
+            height: 5%;
+            border-style: solid;
+            border-color: white;
+            border-left: black;
+            border-right: black;
+            border-top: black;
+            position: absolute;
+            padding-bottom: 1%;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        .Bname
+        {
+            color: white;
+            top:16%;
+            right: 68%;
+            position: absolute;
+        }
+
+        .navi {
+            margin-left: 80%;
+            margin-top: 1.5%; 
+            
+
+        }
+
+        .navi a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin-right: 1%; 
+            top: 55%;
+            
+            
+        }
+
+        .navi a:hover{
+           
+            border-color: white;
+            border: 1px outset;
+            padding: 1%;
+        }
+
+        .logo {
+            top: -6.6%;
+            background-repeat: no-repeat;
+            margin-left: 2%;
+            position:fixed;
+        }
+        .logo img {
+            width: 20%;
+            margin-top: 14%;
+        }
+
+
+        .footer {
+            width: 100%;
+            background-color: black;
+            height: 35%;
+            color: #fff;
+            margin-left: 0%;
+            margin-top: auto;
+           position: static;
+           border-style: solid;
+           border-color: white;
+           border-bottom: black;
+           border-left: black;
+           border-right: black;
+
+        }
+
+        .fb img{
+            background-color: black;
+            margin-left: 90%;
+            margin-top: 10%;
+            position: relative;
+        }
+
+     
+
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 0;
+    transition: 0.4s;
+    margin-right: 25px;
+  }
+  
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    width: 150px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgb(253, 253, 253);
+    margin-right: 23px;
+    border-radius: 5px;
+  }
+  
+  .menu.active {
+    display: block;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+
+
+  .menu ul li {
+    margin-bottom: 20px;
+   
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+  }
+
+
+  .content  {
+   overflow-y: hidden;
+    position: relative;
+    clear: both;
+    margin-top: 4%;
+    color: #ffffff;
+     }
+     .content2  {
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    height: 100%;
+    margin-top: 2%;
+    color: #ffffff;
+     }
+
+    .popup /*mismong popup*/
+    {
+    display: none;
+    position: absolute;
+    margin-top: -25.5%;
+    width: 89.6%;
+    height: 155%;
+    margin-left: 4.21%;
+    background-color: transparent; /*pag inopen popup transparent ung bg sa gilid*/
+    }
+
+    .popup-content  
+    {
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+    width: 70%;
+    height: 50%;
+    margin: 100px auto; /* center the popup */
+    border: solid 2px white;
+    
+    }
+
+    .popup-content p{
+      word-spacing:7px;
+      text-align: center;
+      padding-top: 12%;
+      
+    }
+
+    .close
+    {
+    float: right;
+    cursor: pointer;
+    }
+
+
+    .close:hover
+    {
+    color: rgb(255, 255, 255);
+    }
+
+    #openPopup { /*ung may background pic*/
+    background-image: url(https://i.imgur.com/Boh0109.jpg);
+    background-size: 101%;
+    width: 65%;
+    height: 40%;
+    border: solid 2px white;
+    position: static;
+    margin-top: 3.25%;
+    margin-left: 16.5%
+    
+    }
+
+    #openPopup img
+    {
+    margin-left: 94%;
+    margin-top: 25.50%;
+    position: static;
+    cursor: pointer;
+    }
+    
+    .popup2 /*mismong popup,,, pang laptop pa lang to iaadjust pa sa pc*/
+    {
+    display: none;
+    position: absolute;
+    margin-top: -61.2%;
+    width:89.6%;
+    height: 132.2%;
+    margin-left: 317px;
+    background-color: transparent; /*pag inopen popup transparent ung bg sa gilid*/
+    }
+
+    .popup-content2  
+    {
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+    width: 70%;
+    height: 25%;
+    margin-top: 45%;
+    border: solid 2px white;
+    position: absolute;
+    
+    }
+
+    .popup-content2 p{
+      word-spacing:7px;
+      text-align: center;
+      padding-top: 12%;
+    }
+
+    .close2
+    {
+    float: right;
+    cursor: pointer;
+    }
+
+    .close2:hover
+    {
+    color: rgb(255, 255, 255);
+    }
+
+    #openPopup2 { /*ung may background pic*/
+    
+    background-image: url(https://i.imgur.com/EJ3xEWE.jpg);
+    background-size: 101%;
+    width: 65%;
+    height: 37%;
+    border: solid 2px white;
+    position:static;
+    margin-top: 3.25%;
+    margin-left: 16.5%;
+    }
+
+    #openPopup2 img
+    {
+    margin-left: 94%;
+    margin-top: 23.50%;
+    position: static;
+    cursor: pointer;
+    }
+
+
+    .popup3 /*mismong popup,,, pang laptop pa lang to iaadjust pa sa pc*/
+    {
+    display: none;
+    position: absolute;
+    margin-top: -61.1%;
+    width:89.6%;
+    height: 132.2%;
+    margin-left: 317px;
+    background-color: transparent; /*pag inopen popup transparent ung bg sa gilid*/
+    }
+
+    .popup-content3  
+    {
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+    width: 70%;
+    height: 25%;
+    margin-top: 45%;
+    border: solid 2px white;
+    position: absolute;
+    
+    }
+
+    .popup-content3 p{
+      word-spacing:7px;
+      text-align: center;
+      padding-top: 8%;
+    }
+
+    .close3
+    {
+    float: right;
+    cursor: pointer;
+    }
+
+    .close3:hover
+    {
+    color: rgb(255, 255, 255);
+    }
+
+    #openPopup3 { /*ung may background pic*/
+    
+    background-image: url(https://i.imgur.com/UO2oLvr.jpg);
+    background-size: 101%;
+    width: 65%;
+    height: 37%;
+    border: solid 2px white;
+    position:static;
+    margin-left: 16.5%;
+    }
+
+    #openPopup3 img
+    {
+    margin-left: 94%;
+    margin-top: 23.50%;
+    position: static;
+    cursor: pointer;
+    }
+
+    .content3{
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    height: 100%;
+    margin-top: -27%;
+    color: #ffffff;
+    }
+
+    @media (max-width:1600px)
+        {
+            .logo img {
+            width: 20%;
+            margin-top: 10%;
+        }
+        .Bname
+        {
+            color: white;
+            top:5%;
+            right: 59%;
+            position: absolute;
+        }
+        .logo {
+            top: -5%;
+            background-repeat: no-repeat;
+            margin-left: 2%;
+            position:fixed;
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        .popup-content  
+        {
+            background-color: rgb(10, 10, 10);
+            padding: 20px;
+            width: 70%;
+            height: 52%;
+            margin: 70px auto; /* center the popup */
+            border: solid 2px white;
+        }
+
+        .popup-content p
+        {
+            word-spacing:7px;
+            text-align: center;
+            padding-top: 10%;
+         }
+        
+        .popup-content2 p{
+            word-spacing:7px;
+            text-align: center;
+            padding-top: 10%;
+    }
+
+         #openPopup {
+            background-image: url(https://i.imgur.com/Boh0109.jpg);
+            background-size: 101%;
+            width: 65%;
+            height: 100%;
+            border: solid 2px white;
+            position: static;
+            margin-top: 3.25%;
+            margin-left: 18.5%;
+    }
+
+        #openPopup2 {
+            background-image: url(https://i.imgur.com/EJ3xEWE.jpg);
+            background-size: 101%;
+            width: 65%;
+            height: 26%;
+            border: solid 2px white;
+            position:absolute;
+            top: 0%;
+            margin-left: 18.5%;
+         }
+
+         #openPopup2 img
+         {
+            margin-left: 94%;
+            margin-top: 22.50%;
+            position: static;
+        }
+
+        .popup /*mismong popup*/
+        {
+            display: none;
+            position: absolute;
+            margin-top: -25.3%;
+            width: 89.6%;
+            height: 140%;
+            margin-left: 6.21%;
+            background-color: transparent; /*pag inopen popup transparent ung bg sa gilid*/
+        }
+
+        .popup2 /*mismong popup,,, pang laptop pa lang to iaadjust pa sa pc*/
+        {
+            display: none;
+            position: absolute;
+            margin-top: -36.5%;
+            width:88.3%;
+            height: 87.5%;
+            margin-left: 18.55%;
+            background-color: transparent; /*pag inopen popup transparent ung bg sa gilid*/
+    }
+        
+        .content2  {
+            overflow: hidden;
+            position: relative;
+            clear: both;
+            margin-top: 2%;
+            color: #ffffff; 
+     }
+                
+        .popup3 /*mismong popup,,, pang laptop pa lang to iaadjust pa sa pc*/
+        {
+             display: none;
+            position: absolute;
+            margin-top: -60.3%;
+            width:88.3%;
+            height: 87.5%;
+            margin-left: 18.4%;
+            background-color: transparent; /*pag inopen popup transparent ung bg sa gilid*/
+        }
+
+    .popup-content3  
+    {
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+    width: 70%;
+    height: 25%;
+    margin-top: 45%;
+    border: solid 2px white;
+    position: absolute;
+    
+    }
+
+    .popup-content3 p{
+      word-spacing:4px;
+      text-align: center;
+      padding-top: 2%;
+    }
+
+    .close3
+    {
+    float: right;
+    cursor: pointer;
+    }
+
+    .close3:hover
+    {
+    color: rgb(255, 255, 255);
+    }
+
+    #openPopup3 {
+    
+    background-image: url(https://i.imgur.com/UO2oLvr.jpg);
+    background-size: 101%;
+    width: 65%;
+    height: 26%;
+    border: solid 2px white;
+    position:static;
+    top: 20%;
+    margin-left: 18.5%;
+    }
+
+    #openPopup3 img
+    {
+    margin-left: 94%;
+    margin-top: 23%;
+    position: static;
+    cursor: pointer;
+    }
+
+    .content3{
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    height: 100%;
+    margin-top: -50%;
+    color: #ffffff;
+    }
+        }
+
+
+        @media (min-width: 360px) and (max-width:800px) /*phone*/
+         {
+           
+
+            .footer {
+            width: 100%;
+            background-color: black;
+            height: 3%;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 0%;
+            clear: both;
+            margin-left: 0%;
+           position: fixed;
+           bottom: 0;
+           background-repeat: no-repeat;
+           border-style: solid;
+           border-color: white;
+           border-bottom: black;
+           border-left: black;
+           border-right: black;
+
+        }
+
+        .fb img{
+            background-color: black;
+            bottom: 1%;
+            right: 2%;
+            position: fixed;
+        }
+                .bar {
+                width: 19px;
+                height: 2px;
+                background-color: rgb(255, 255, 255);
+                margin: 4px 0;
+                transition: 0.4s;
+                margin-right: 25px;
+  }
+             .container {
+                height: 900px;
+                overflow-y: scroll;
+        }
+            .header {
+                overflow: hidden;
+                background-color: black;
+                margin-top: 0%;
+                width: 100%;
+                height: 3.5%;
+                border-style: solid;
+                border-color: white;
+                border-left: black;
+                border-right: black;
+                border-top: black;
+                padding-bottom: 1%;
+                position: fixed;
+                z-index: 1000;
+        }
+            .logo img {
+            width: 11%;
+            margin-top: 11%;
+        }
+        .Bname
+        {
+            color: white;
+            top:16%;
+            right: 42%;
+            position: absolute;
+        }
+        .logo {
+            top: -4.5%;
+            background-repeat: no-repeat;
+            margin-left: 2%;
+            position:fixed;
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            position: fixed;
+            top: 7px;
+            right: 0px;
+            z-index: 999;
+        }
+
+        .popup-content  
+        {
+            background-color: rgb(10, 10, 10);
+            
+            width: 61%;
+            border: solid 2px white;
+        }
+
+        .popup-content p
+        {
+            font-size: 9%;
+            word-spacing:7px;
+            text-align: center;
+            padding-top: 1%;
+         }
+
+         #openPopup {
+            background-image: url(https://i.imgur.com/Boh0109.jpg);
+            background-size: 101%;
+            width: 65%;
+            height: 100%;
+            border: solid 2px white;
+            position: static;
+            margin-top: 8.25%;
+            margin-left: 18.5%;
+            
+    }
+            .close
+            {
+                float: right;
+                cursor: pointer;
+             }
+
+        #openPopup2 {
+            background-image: url(https://i.imgur.com/EJ3xEWE.jpg);
+            background-size: 101%;
+            width: 65%;
+            height: auto;
+            border: solid 2px white;
+            position:absolute;
+            margin-top: 5%;
+            margin-left: 18.5%;
+         }
+
+         #openPopup2 img
+         {
+            margin-left: 94%;
+            margin-top: 25.50%;
+            position: static;
+        }
+        
+
+        .popup /*mismong popup*/
+        {
+            display: none;
+            position: absolute;
+            
+            margin-top: -41.7%;
+            height: 66%;
+            width: 89.6%;
+            margin-left: 6.21%;
+            background-color: transparent; /*pag inopen popup transparent ung bg sa gilid*/
+        }
+
+        .popup2 /*mismong popup,,, pang laptop pa lang to iaadjust pa sa pc*/
+        {
+            display: none;
+            position: absolute;
+            margin-top: -35.7%;
+            width:88.7%;
+            margin-left: 18.21%;
+            background-color: transparent; /*pag inopen popup transparent ung bg sa gilid*/
+    }
+
+    .popup-content2  
+    {
+    background-color: rgb(10, 10, 10);
+    width: 61%;
+    height: auto;
+    border: solid 2px white;
+    position: absolute;
+    
+    }
+
+    .popup-content2 p{
+        font-size: 9%;
+      word-spacing:7px;
+      text-align: center;
+      padding-top: 7%;
+      
+    }
+    .content  {
+            overflow-y: hidden;
+            position: relative;
+            clear: both;
+            margin-top: 7%;
+            color: #ffffff;
+     }
+        .content2  {
+            overflow: hidden;
+            position: relative;
+            clear: both;
+            margin-top: 9%;
+            color: #ffffff;
+     }
+     .popup3 /*mismong popup,,, pang laptop pa lang to iaadjust pa sa pc*/
+        {
+             display: none;
+            position: absolute;
+            margin-top: -58.3%;
+            width:88.6%;
+            height: 93%;
+            margin-left: 18.4%;
+            background-color: transparent; /*pag inopen popup transparent ung bg sa gilid*/
+        }
+
+    .popup-content3  
+    {
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+    width: 70%;
+    height: 25%;
+    margin-top: 45%;
+    border: solid 2px white;
+    position: absolute;
+    
+    }
+
+    .popup-content3 p{
+      word-spacing:7px;
+      text-align: center;
+      padding-top: 8%;
+    }
+
+    .close3
+    {
+    float: right;
+    cursor: pointer;
+    }
+
+    .close3:hover
+    {
+    color: rgb(255, 255, 255);
+    }
+
+    #openPopup3 {
+    
+    background-image: url(https://i.imgur.com/UO2oLvr.jpg);
+    background-size: 101%;
+    width: 65%;
+    height: 8%;
+    border: solid 2px white;
+    position:absolute;
+    margin-left: 18.5%;
+    }
+
+    #openPopup3 img
+    {
+    margin-left: 94%;
+    margin-top: 23%;
+    position: static;
+    cursor: pointer;
+    }
+
+    .content3{
+    overflow: hidden;
+    position: relative;
+    clear: both;
+
+    color: #ffffff;
+    }
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <div class="Bname">
+            <center><a><img src="https://i.imgur.com/yGGtdLm.png" alt="image" width="50%"height="15%"></a></center>
+        </div>
+        <div class="logo">
+            <a href="home.html"><img src="https://i.imgur.com/iqsg0U9.jpg" alt="image"></a>
+        </div>
+        
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          
+          <nav class="menu">
+            <ul>
+              <li><a href="HOME.html">HOME</a></li>
+              <li><a href="ABOUT.html">ABOUT</a></li>
+              <li><a href="SHORTS.html">APPAREL</a></li>
+              <li><a href="fcontact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+    </div>
+
+    <div class="content">
+        <button id="openPopup"><img src="https://i.imgur.com/9II424V.png" width="5%"></img></button>
+         <div id="popup" class="popup">
+        <div class="popup-content">
+        <span class="close" id="closePopup">&times;</span>
+        <p>Classy Rags is a dynamic clothing brand dedicated to
+        providing stylish, comfortable, and high-quality mesh shorts
+         and complementary clothing. With a focus on modern
+        design and exceptional craftsmanship, we aim to offer
+        apparel that suits both casual and active lifestyles. <br></p>
+        </div>
+
+          <script>
+        document.getElementById('openPopup').addEventListener('click', function() {
+        document.getElementById('popup').style.display = 'block';
+    });
+        document.getElementById('closePopup').addEventListener('click', function() {
+        document.getElementById('popup').style.display = 'none';
+    });
+
+          </script>
+          </div>
+        </div>
+
+    <div class="content2">
+        <button id="openPopup2"><img src="https://i.imgur.com/9II424V.png" width="5%"></img></button>
+        <div id="popup2" class="popup2">
+       <div class="popup-content2">
+       <span class="close2" id="closePopup2">&times;</span>
+       <p>
+       Our brand operates from two strategic locations. Our main
+       base is situated at 721 NHA Avenue Purok Phase V, Brgy.<br></p>
+       </div>
+    
+    <script>
+
+        document.getElementById('openPopup2').addEventListener('click', function() {
+        document.getElementById('popup2').style.display = 'block';
+    });
+
+        document.getElementById('closePopup2').addEventListener('click', function() {
+        document.getElementById('popup2').style.display = 'none';
+    });
+    </script>
+        </div>
+    </div>
+
+    <div class="content3">
+        <button id="openPopup3"><img src="https://i.imgur.com/9II424V.png" width="5%"></img></button>
+        <div id="popup3" class="popup3">
+       <div class="popup-content3">
+       <span class="close3" id="closePopup3">&times;</span>
+       <p>
+        Our mesh shorts are designed with versatile<br>
+        style and functionality in mind, ensuring they can be worn
+        both in sports and everyday settings.<br>We are continually
+        expanding our collection to include complementary clothing
+        that pairs perfectly with our mesh shorts, offering our
+        customers a complete and cohesive wardrobe.<br><br>
+        Our commitment extends beyond fashion to include
+        exceptional customer service, community engagement, and
+        sustainable practices. <br> We strive to create an enjoyable
+        shopping experience for our customers while upholding our
+        values and contributing positively to the fashion industry.<br></p>
+       </div>
+    
+    <script>
+
+        document.getElementById('openPopup3').addEventListener('click', function() {
+        document.getElementById('popup3').style.display = 'block';
+    });
+
+        document.getElementById('closePopup3').addEventListener('click', function() {
+        document.getElementById('popup3').style.display = 'none';
+    });
+    </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="fb">
+            <a href ="https://www.facebook.com/profile.php?id=61556903020205&mibextid=ZbWKwL"><img src="https://i.imgur.com/hpDWfMV.png" width="2%" alt="image"></a>
+        </div>
+   
+    </div>
+</div>
+<script src="script.java"></script>
+</body>
+</html>
+
 
